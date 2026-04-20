@@ -2,6 +2,6 @@
 venv/
 __pycache__/
 *.pyc
-data/
+voc_pipeline/voc_pipeline/data/raw/raw/
 .DS_Store
 .idea/
