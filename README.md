@@ -2,7 +2,7 @@
 
 A Korean-language NLP pipeline for detecting causal signals in consumer Voice of Customer (VoC) data for **CNP (차앤박)**. The pipeline collects multi-source Korean VoC data, applies LDA and BERTopic topic modeling across multiple preprocessing strategies, and extracts structured causal signals — identifying *why* consumers churn, not just *what* they said.
 
-Built as a portfolio project targeting the **AX (AI Transformation) role at LG생활건강**, this pipeline directly addresses the strategic question the company faces: *why is CNP losing consumers to indie brands like ANUA, and what are the language-level patterns that signal churn before it becomes irreversible?*
+This pipeline directly addresses a strategic question: *why is CNP losing consumers to indie brands like ANUA, and what are the language-level patterns that signal churn before it becomes irreversible?*
 
 ---
 
@@ -41,15 +41,15 @@ The pipeline is designed to answer:
 
 ## Business Context
 
-LG생활건강 reported a 62.8% drop in operating profit in 2025 (₩1,707B), with its cosmetics segment recording its first deficit in 20 years. CNP accounts for approximately 5% of cosmetics revenue and competes directly with fast-growing indie dermocosmetic brands — most notably ANUA, which occupies the same product category (cleansers, toners, serums) and has achieved significant viral traction on YouTube and social platforms.
+The parent company reported a 62.8% drop in operating profit in 2025 (₩1,707B), with its cosmetics segment recording its first deficit in 20 years. CNP accounts for approximately 5% of cosmetics revenue and competes directly with fast-growing indie dermocosmetic brands — most notably ANUA, which occupies the same product category (cleansers, toners, serums) and has achieved significant viral traction on YouTube and social platforms.
 
-This pipeline treats CNP's VoC data as a signal layer to answer a question LG생활건강's existing VoC classification systems (which categorize *what* consumers said) cannot fully answer: ***why*** are consumers switching, and which segments are at the highest structural risk of churn?
+This pipeline treats CNP's VoC data as a signal layer to answer a question the company's existing VoC classification systems (which categorize *what* consumers said) cannot fully answer: ***why*** are consumers switching, and which segments are at the highest structural risk of churn?
 
 ---
 
 ## Dataset
 
-- **Brand**: CNP (차앤박 / CNP Laboratory) — LG생활건강 dermocosmetic brand
+- **Brand**: CNP (차앤박 / CNP Laboratory)
 - **Total documents**: 6,522 collected → 3,013 after CNP relevance filtering
 - **Sources**:
 
@@ -300,7 +300,7 @@ Monthly churn rate trend (documents with date metadata):
 
 The January–February 2026 spike (54.3%) is more than double the baseline and aligns temporally with the period when CNP's PDRN ampoule line received increased YouTube coverage. The recovery by April 2026 suggests the spike was event-driven rather than structural — but the triggering event cannot be confirmed from VoC data alone without external event correlation.
 
-> **Business implication**: Temporal churn monitoring — even at monthly granularity — can surface product or communication events that generate disproportionate consumer backlash before they become permanent brand damage. A real-time version of this pipeline, integrated with LG생활건강's existing data infrastructure, would enable 2–4 week early warning on emerging churn signals.
+> **Business implication**: Temporal churn monitoring — even at monthly granularity — can surface product or communication events that generate disproportionate consumer backlash before they become permanent brand damage. A real-time version of this pipeline, integrated with the company's existing data infrastructure, would enable 2–4 week early warning on emerging churn signals.
 
 ---
 
