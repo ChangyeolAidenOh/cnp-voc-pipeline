@@ -1,6 +1,6 @@
 # CNP VoC Causal Signal Detection Pipeline
 
-A Korean-language NLP pipeline for detecting causal signals in consumer Voice of Customer (VoC) data for **CNP (차앤박)**, a dermocosmetic brand under LG생활건강. The pipeline collects multi-source Korean VoC data, applies LDA and BERTopic topic modeling across multiple preprocessing strategies, and extracts structured causal signals — identifying *why* consumers churn, not just *what* they said.
+A Korean-language NLP pipeline for detecting causal signals in consumer Voice of Customer (VoC) data for **CNP (차앤박)**. The pipeline collects multi-source Korean VoC data, applies LDA and BERTopic topic modeling across multiple preprocessing strategies, and extracts structured causal signals — identifying *why* consumers churn, not just *what* they said.
 
 Built as a portfolio project targeting the **AX (AI Transformation) role at LG생활건강**, this pipeline directly addresses the strategic question the company faces: *why is CNP losing consumers to indie brands like ANUA, and what are the language-level patterns that signal churn before it becomes irreversible?*
 
