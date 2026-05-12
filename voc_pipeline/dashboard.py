@@ -57,7 +57,7 @@ def format_keywords(val):
 # Header
 st.title(" CNP VoC Causal Signal Detection ")
 st.markdown(
-    "Aiden Changyeol Oh"
+    ""
 )
 st.divider()
 
